@@ -27,6 +27,11 @@ class SecondScreen : UIViewController
         skiImage.image = UIImage(named: "FullSizeRender 2")
     }
     
+    @IBAction func toThirdScreen(sender: UIButton)
+    {
+        performSegueWithIdentifier("toThirdScreen", sender: sender)
+    }
+    
     
     
 }

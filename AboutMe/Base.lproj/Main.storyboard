@@ -97,7 +97,9 @@
                                     <rect key="frame" x="268" y="622" width="51" height="36"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="po5-Eh-szS" kind="show" identifier="toThirdScreen" id="gvH-2d-ynk"/>
+                                    <action selector="stNextButton:" destination="H2X-Z8-9w7" eventType="touchUpInside" id="NeW-eS-dLH"/>
+                                    <action selector="toThirdScreen:" destination="H2X-Z8-9w7" eventType="touchUpInside" id="Qeh-g6-25O"/>
+                                    <segue destination="po5-Eh-szS" kind="show" identifier="toThirdScreen" id="2op-Sg-pKI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -141,13 +143,10 @@
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="20" y="78" width="201" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="favCollegeButton:" destination="po5-Eh-szS" eventType="touchUpInside" id="O1y-fH-aSK"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EaN-lc-DVG">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="123" width="240" height="128"/>
-                                </variation>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vn-0w-MLk">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Favorite Color">
@@ -156,6 +155,9 @@
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="20" y="309" width="96" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="favColorButton:" destination="po5-Eh-szS" eventType="touchUpInside" id="1QG-p0-b4d"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j5F-S1-k3t">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -171,11 +173,20 @@
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="481" y="78" width="99" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="favMusicButton:" destination="po5-Eh-szS" eventType="touchUpInside" id="4g8-Lb-e1N"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zTV-Vl-shh">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="340" y="123" width="240" height="128"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EaN-lc-DVG">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="123" width="240" height="128"/>
                                 </variation>
                             </imageView>
                         </subviews>
@@ -184,25 +195,30 @@
                             <mask key="subviews">
                                 <exclude reference="Yqu-fW-8Yd"/>
                                 <exclude reference="sJq-55-RRD"/>
-                                <exclude reference="EaN-lc-DVG"/>
                                 <exclude reference="4Vn-0w-MLk"/>
                                 <exclude reference="j5F-S1-k3t"/>
                                 <exclude reference="j6s-eh-NdL"/>
                                 <exclude reference="zTV-Vl-shh"/>
+                                <exclude reference="EaN-lc-DVG"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
                                 <include reference="Yqu-fW-8Yd"/>
                                 <include reference="sJq-55-RRD"/>
-                                <include reference="EaN-lc-DVG"/>
                                 <include reference="4Vn-0w-MLk"/>
                                 <include reference="j5F-S1-k3t"/>
                                 <include reference="j6s-eh-NdL"/>
                                 <include reference="zTV-Vl-shh"/>
+                                <include reference="EaN-lc-DVG"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="byuImage" destination="EaN-lc-DVG" id="E1f-b8-Czi"/>
+                        <outlet property="favColorImage" destination="j5F-S1-k3t" id="1eP-Gs-Dwg"/>
+                        <outlet property="favMusicImage" destination="zTV-Vl-shh" id="NbC-tL-fmT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOz-zN-wHK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
