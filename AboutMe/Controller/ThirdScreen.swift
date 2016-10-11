@@ -32,7 +32,7 @@ class ThirdScreen : UIViewController
     
     @IBAction func favColorButton(sender: AnyObject)
     {
-        favColorImage.image = UIImage(named:"faveColorImage")
+        favColorImage.image = UIImage(named: "favColorImage")
     }
     
     
