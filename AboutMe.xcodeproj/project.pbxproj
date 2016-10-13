@@ -13,6 +13,8 @@
 		B80186631DA2A7B3009B157A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B80186621DA2A7B3009B157A /* Assets.xcassets */; };
 		B80186661DA2A7B3009B157A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B80186641DA2A7B3009B157A /* LaunchScreen.storyboard */; };
 		B80186701DA2A871009B157A /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B801866F1DA2A871009B157A /* SecondScreen.swift */; };
+		B8113D2E1DAFC5AB001697EE /* FourthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8113D2D1DAFC5AB001697EE /* FourthScreen.swift */; };
+		B8113D301DAFC73F001697EE /* FifthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8113D2F1DAFC73F001697EE /* FifthScreen.swift */; };
 		B8F857DA1DA543E2006C5769 /* ThirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F857D91DA543E2006C5769 /* ThirdScreen.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		B80186651DA2A7B3009B157A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B80186671DA2A7B3009B157A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B801866F1DA2A871009B157A /* SecondScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondScreen.swift; path = Controller/SecondScreen.swift; sourceTree = "<group>"; };
+		B8113D2D1DAFC5AB001697EE /* FourthScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthScreen.swift; sourceTree = "<group>"; };
+		B8113D2F1DAFC73F001697EE /* FifthScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthScreen.swift; sourceTree = "<group>"; };
 		B8F857D91DA543E2006C5769 /* ThirdScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdScreen.swift; path = Controller/ThirdScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +77,8 @@
 				B801865D1DA2A7B3009B157A /* ViewController.swift */,
 				B801866F1DA2A871009B157A /* SecondScreen.swift */,
 				B8F857D91DA543E2006C5769 /* ThirdScreen.swift */,
+				B8113D2D1DAFC5AB001697EE /* FourthScreen.swift */,
+				B8113D2F1DAFC73F001697EE /* FifthScreen.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -157,6 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8113D2E1DAFC5AB001697EE /* FourthScreen.swift in Sources */,
+				B8113D301DAFC73F001697EE /* FifthScreen.swift in Sources */,
 				B801865E1DA2A7B3009B157A /* ViewController.swift in Sources */,
 				B801865C1DA2A7B3009B157A /* AppDelegate.swift in Sources */,
 				B80186701DA2A871009B157A /* SecondScreen.swift in Sources */,
