@@ -195,7 +195,7 @@
                                     <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="275" y="723" width="51" height="36"/>
+                                    <rect key="frame" x="275" y="703" width="51" height="36"/>
                                 </variation>
                                 <connections>
                                     <segue destination="xyk-HF-vKK" kind="show" identifier="toFourthScreen" id="h0E-TT-Jal"/>
@@ -250,6 +250,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Media" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oL-3n-leZ">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="215" y="20" width="170" height="36"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seU-1J-WWM">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Snapchat">
+                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="19" y="286" width="65" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="snapButton:" destination="xyk-HF-vKK" eventType="touchUpInside" id="PI2-IQ-FGY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3c-Zn-R4n">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Twitter">
+                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="19" y="473" width="48" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="twitterButton:" destination="xyk-HF-vKK" eventType="touchUpInside" id="722-RL-oHp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRV-gd-OjS">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Instagram">
+                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="19" y="89" width="69" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="instaButton:" destination="xyk-HF-vKK" eventType="touchUpInside" id="FRV-3r-zJ0"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j26-8Q-qtU">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="19" y="132" width="240" height="128"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XXD-6V-XEW">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="19" y="324" width="204" height="154"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gfe-do-KJk">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="19" y="516" width="240" height="128"/>
+                                </variation>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEo-el-hid">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -257,7 +320,7 @@
                                     <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="275" y="723" width="51" height="36"/>
+                                    <rect key="frame" x="275" y="670" width="51" height="36"/>
                                 </variation>
                                 <connections>
                                     <segue destination="kRt-Si-sAY" kind="show" identifier="toFifthScreen" id="eU3-gU-5H4"/>
@@ -267,15 +330,34 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="0.38" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="6oL-3n-leZ"/>
+                                <exclude reference="seU-1J-WWM"/>
+                                <exclude reference="y3c-Zn-R4n"/>
+                                <exclude reference="oRV-gd-OjS"/>
+                                <exclude reference="j26-8Q-qtU"/>
+                                <exclude reference="XXD-6V-XEW"/>
+                                <exclude reference="gfe-do-KJk"/>
                                 <exclude reference="YEo-el-hid"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
+                                <include reference="6oL-3n-leZ"/>
+                                <include reference="seU-1J-WWM"/>
+                                <include reference="y3c-Zn-R4n"/>
+                                <include reference="oRV-gd-OjS"/>
+                                <include reference="j26-8Q-qtU"/>
+                                <include reference="XXD-6V-XEW"/>
+                                <include reference="gfe-do-KJk"/>
                                 <include reference="YEo-el-hid"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="instaImage" destination="j26-8Q-qtU" id="zs0-38-9pX"/>
+                        <outlet property="snapImage" destination="XXD-6V-XEW" id="Kes-HK-pwC"/>
+                        <outlet property="twitterImage" destination="gfe-do-KJk" id="idk-Q6-pqR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MIV-bX-cqO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
